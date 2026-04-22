@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Dashboard.css";
-const BASE_URL = "https://student-registration-18y7.onrender.com";
+const BASE_URL = "http://localhost:5000";
 
 function Dashboard() {
   const [student, setStudent] = useState(null);
@@ -95,9 +95,9 @@ function Dashboard() {
       {/* ===== Separate Buttons ===== */}
       <button
   onClick={() => {
-  setShowPassword(!showPassword);
-  setShowCourse(false);
-}}
+    setShowPassword(true);
+    setShowCourse(false); // 👈 close course form
+  }}
 >
   Update Password
 </button>
