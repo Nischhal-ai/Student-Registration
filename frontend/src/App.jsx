@@ -1,5 +1,4 @@
 import { HashRouter as Router } from "react-router-dom";
-from "react-router-dom";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Dashboard from "./components/Dashboard";
