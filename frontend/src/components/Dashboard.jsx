@@ -21,7 +21,7 @@ function Dashboard() {
   /* ================= FETCH DATA ================= */
   useEffect(() => {
     if (!token) {
-      window.location.href = "/";
+      window.location.href = "/#/";
       return;
     }
 
@@ -33,7 +33,7 @@ function Dashboard() {
       .catch(() => {
         alert("Session expired");
         localStorage.removeItem("token");
-        window.location.href = "/";
+        window.location.href = "/#/";
       });
   }, []);
 
@@ -78,7 +78,7 @@ function Dashboard() {
   /* ================= LOGOUT ================= */
   const logout = () => {
     localStorage.removeItem("token");
-    window.location.href = "/";
+    window.location.href = "/#/";
   };
 
   if (!student) return <h2 style={{ textAlign: "center" }}>Loading...</h2>;

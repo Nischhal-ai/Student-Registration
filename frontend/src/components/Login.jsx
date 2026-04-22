@@ -21,7 +21,7 @@ function Login() {
       localStorage.setItem("token", res.data.token);
 
       // 🔥 Force redirect (no router bug)
-      window.location.href = "/dashboard";
+      window.location.href = "/#/dashboard";
 
     } catch (err) {
       console.log(err);

@@ -38,7 +38,7 @@ function Register() {
   try {
     await axios.post(`${BASE_URL}/api/register`, form);
     alert("Registered Successfully");
-    window.location.href = "/";
+    window.location.href = "/#/";
   } catch (err) {
     alert(err.response?.data?.message || "Registration failed");
   }
