@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Register.css";
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://student-registration-18y7.onrender.com";
 
 function Register() {
   const [form, setForm] = useState({

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Dashboard.css";
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://student-registration-18y7.onrender.com";
 
 function Dashboard() {
   const [student, setStudent] = useState(null);
